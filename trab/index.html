@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music+ | Home</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="text-white text-center py-3">
+        <img src="images/logo.png" alt="Music+ Logo" class="mb-3 logo-img">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="musicas.html">Músicas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="artistas.html">Artistas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="quem_somos.html">Quem somos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="top10_90s.html">Top 10 Músicas dos Anos 90</a>
+                        </li>
+                    </ul>
+                    <form class="form-inline ml-auto" action="search.html">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar" name="query">
+                        <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Pesquisar</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="container mt-4">
+        <section class="jumbotron text-center">
+            <img src="images/banner.jpg" alt="Banner" class="img-fluid banner-img">
+            <h2 class="mt-4">Top 10 Músicas dos Anos 90</h2>
+            <p><a href="top10_90s.html" class="btn btn-primary">Veja as 10 Melhores Músicas dos Anos 90</a></p>
+        </section>
+        <section class="row">
+            <article class="col-md-4">
+                <h3>Seção Blog</h3>
+                <ul>
+                    <li><a href="blog/celine_dion.html">As revelações do documentário de Celine Dion</a></li>
+                    <li><a href="blog/sabrina_carpenter.html">5 filmes para maratonar com a Sabrina Carpenter</a></li>
+                </ul>
+            </article>
+            <article class="col-md-4">
+                <h3>News</h3>
+                <p><a href="news/retorno_mc_biel.html">O retorno de MC Biel</a></p>
+                <p><a href="news/fim_do_mundo_mioto.html">O fim do mundo: Gustavo Mioto</a></p>
+            </article>
+            <article class="col-md-4">
+                <h3>Conheça mais o seu artista favorito</h3>
+                <ul>
+                    <li><a href="artistafav/shakira.html">Shakira</a></li>
+                    <li><a href="artistafav/sam_smith.html">Sam Smith</a></li>
+                    <li><a href="biografia/biografia_ana_castela.html">Ana Castela</a></li>
+                    <li><a href="artistafav/simone_simaria.html">Simone e Simaria</a></li>
+                    <li><a href="artistafav/adele.html">Adele</a></li>
+                </ul>
+            </article>
+        </section>
+    </main>
+    <footer class="text-white text-center py-2">
+        <p>Contatos: <a href="#" class="text-white">Facebook</a> | <a href="#" class="text-white">Twitter</a> | <a href="#" class="text-white">Instagram</a></p>
+        <p>© 2024 Music+. Todos os direitos reservados.</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/search.js"></script>
+</body>
+</html>

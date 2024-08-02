@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music+ | Músicas</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        /* Ajuste do tamanho da logo */
+        .logo-img {
+            max-width: 150px; /* Define um tamanho máximo para a logo */
+            height: auto; /* Mantém a proporção da imagem */
+        }
+        /* Ajuste das cores para roxo */
+        .bg-custom-header {
+            background-color: #4b2e83; /* Cor de fundo roxa para o cabeçalho */
+        }
+        .bg-custom-navbar {
+            background-color: #4b2e83; /* Cor de fundo roxa para a barra de navegação */
+        }
+        /* Estilo para a seção de músicas */
+        .music-list {
+            list-style: none;
+            padding: 0;
+        }
+        .music-list li {
+            background-color: #f8f9fa;
+            margin-bottom: 15px;
+            padding: 15px;
+            border-radius: 5px;
+            text-align: center;
+            position: relative;
+        }
+        .music-list h4 {
+            margin-bottom: 10px;
+        }
+        .music-list a {
+            text-decoration: none;
+            color: #4b2e83;
+            font-weight: bold;
+        }
+        .music-list a:hover {
+            text-decoration: underline;
+        }
+        .favorite-icon {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            cursor: pointer;
+            font-size: 24px;
+            color: #ccc;
+        }
+        .favorite-icon.favorited {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <header class="bg-custom-header text-white text-center py-3">
+        <img src="images/logo.png" alt="Music+ Logo" class="logo-img mb-3">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-custom-navbar">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">Music+</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="musicas.html">Músicas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="quem_somos.html">Quem somos</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="container mt-4">
+        <!-- Seção Top 10 Músicas do Momento -->
+        <section>
+            <h2 class="text-center">Top 10 Músicas do Momento</h2>
+            <ul class="music-list">
+                <li>
+                    <h4><a href="smells_like_teen_spirit.html">Smells Like Teen Spirit</a></h4>
+                    <a href="https://www.youtube.com/watch?v=hTWKbfoikeg" target="_blank">Ver no YouTube</a>
+                    <p><strong>Trecho:</strong> Load up on guns, bring your friends<br>It's fun to lose and to pretend<br>She's over-bored and self assured</p>
+                    <span class="favorite-icon" onclick="toggleFavorite(this)">&#x2661;</span>
+                </li>
+                <li>
+                    <h4><a href="musicas/lose_yourself.html">Lose Yourself</a></h4>
+                    <a href="https://www.youtube.com/watch?v=_Yhyp9mVew" target="_blank">Ver no YouTube</a>
+                    <p><strong>Letra:</strong> Look, if you had one shot, or one opportunity...</p>
+                    <span class="favorite-icon" onclick="toggleFavorite(this)">&#x2661;</span>
+                </li>
+                <li>
+                    <h4><a href="/musicas/umbrella.html">Umbrella</a></h4>
+                    <a href="https://www.youtube.com/watch?v=CvBfHwUxHIk" target="_blank">Ver no YouTube</a>
+                    <p><strong>Letra:</strong> You had my heart, and we'll never be worlds apart...</p>
+                    <span class="favorite-icon" onclick="toggleFavorite(this)">&#x2661;</span>
+                </li>
+                <li>
+                    <h4><a href="musicas/american_idiot.html">American Idiot</a></h4>
+                    <a href="https://www.youtube.com/watch?v=Soa3gO7tL-c" target="_blank">Ver no YouTube</a>
+                    <p><strong>Letra:</strong> Don't wanna be an American idiot...</p>
+                    <span class="favorite-icon" onclick="toggleFavorite(this)">&#x2661;</span>
+                </li>
+                <li>
+                    <h4><a href="musicas/with_or_without_you.html">With or Without You</a></h4>
+                    <a href="https://www.youtube.com/watch?v=XmSdTa9kaiQ" target="_blank">Ver no YouTube</a>
+                    <p><strong>Letra:</strong> See the stone set in your eyes...</p>
+                    <span class="favorite-icon" onclick="toggleFavorite(this)">&#x2661;</span>
+                </li>
+                <li>
+                    <h4><a href="musicas/hero.html">Hero</a></h4>
+                    <a href="https://www.youtube.com/watch?v=6r4I3zw6l68" target="_blank">Ver no YouTube</a>
+                    <p><strong>Letra:</strong> There's a hero, if you look inside your heart...</p>
+                    <span class="favorite-icon" onclick="toggleFavorite(this)">&#x2661;</span>
+                </li>
+                <li>
+                    <h4><a href="musicas/hollaback_girl.html">Hollaback Girl</a></h4>
+                    <a href="https://www.youtube.com/watch?v=Kx8AEwA9l50" target="_blank">Ver no YouTube</a>
+                    <p><strong>Letra:</strong> I heard that you were talking shit...</p>
+                    <span class="favorite-icon" onclick="toggleFavorite(this)">&#x2661;</span>
+                </li>
+                <li>
+                    <h4><a href="musicas/bad_romance.html">Bad Romance</a></h4>
+                    <a href="https://www.youtube.com/watch?v=qrO4YZeyl0I" target="_blank">Ver no YouTube</a>
+                    <p><strong>Letra:</strong> I want your love and I want your revenge...</p>
+                    <span class="favorite-icon" onclick="toggleFavorite(this)">&#x2661;</span>
+                </li>
+                <li>
+                    <h4><a href="musicas/complicated.html">Complicated</a></h4>
+                    <a href="https://www.youtube.com/watch?v=5NwEsVZX2rs" target="_blank">Ver no YouTube</a>
+                    <p><strong>Letra:</strong> Why'd you have to go and make things so complicated...</p>
+                    <span class="favorite-icon" onclick="toggleFavorite(this)">&#x2661;</span>
+                </li>
+                <li>
+                    <h4><a href="/musicas/i_want_it.html">It Wasn't Me</a></h4>
+                    <a href="https://www.youtube.com/watch?v=2aVqDOrljGE" target="_blank">Ver no YouTube</a>
+                    <p><strong>Letra:</strong> Honey, give me that look, it wasn’t me...</p>
+                    <span class="favorite-icon" onclick="toggleFavorite(this)">&#x2661;</span>
+                </li>
+                <li>
+                    <h4><a href="/musicas/baby_one.html">One Moment in Time</a></h4>
+                    <a href="https://www.youtube.com/watch?v=O8SHTWb8g5Q" target="_blank">Ver no YouTube</a>
+                    <p><strong>Letra:</strong> Each day I live, I want to be a day to give...</p>
+                    <span class="favorite-icon" onclick="toggleFavorite(this)">&#x2661;</span>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer class="bg-dark text-white text-center py-3">
+        <p>Contatos: <a href="#" class="text-white">Facebook</a> | <a href="#" class="text-white">Twitter</a> | <a href="#" class="text-white">Instagram</a></p>
+        <p>© 2024 Music+. Todos os direitos reservados.</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        function toggleFavorite(element) {
+            element.classList.toggle('favorited');
+        }
+    </script>
+</body>
+</html>

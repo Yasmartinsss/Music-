@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music+ | Quem somos</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <header class="text-white text-center py-3">
+        <img src="images/logo.png" alt="Music+ Logo" class="mb-3 logo-img">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">Music+</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="musicas.html">Músicas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="artistas.html">Artistas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="quem_somos.html">Quem somos</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="container mt-4">
+        <section>
+            <h2>Quem somos</h2>
+            <p>Music+ é um site dedicado a trazer as melhores músicas e artistas dos anos 90.<br>
+                Nosso objetivo é conectar fãs e trazer nostalgia com qualidade.<br>
+                Somos dois universitários apaixonados por música e tecnologia. <br>
+                Sempre acreditamos no impacto positivo que a música pode ter em nossas vidas e na habilidade da tecnologia de conectar as pessoas com suas paixões. Essa crença foi o que nos uniu e nos motivou a criar o Music+, uma plataforma inovadora voltada para todos que compartilham o mesmo amor pela música.
+                Unindo nossas competências acadêmicas, desenvolvemos o Music+ para ser muito mais do que um simples reprodutor de músicas. Queremos que seja um lugar onde músicos, fãs e entusiastas possam se conectar, descobrir novas tendências e compartilhar suas experiências musicais. Nosso objetivo é tornar a música acessível, interativa e envolvente para todos, onde quer que estejam.
+                No Music+, acreditamos que a música é uma linguagem universal que transcende fronteiras e une culturas. Essa visão nos motiva a aprimorar constantemente nossa plataforma, trazendo novas funcionalidades e recursos que enriquecem a experiência musical dos nossos usuários.
+                Venha conectar-se com a música conosco e experimente o poder do Music+!<br></p>
+        </section>
+        <section class="mt-4">
+            <h2>Entre em Contato</h2>
+            <p>Se você tiver dúvidas ou sugestões, entre em contato com os desenvolvedores preenchendo o formulário abaixo:</p>
+            <form id="contactForm" action="mailto:contato@musica.com" method="post" enctype="text/plain" onsubmit="return handleSubmit()">
+                <div class="form-group">
+                    <label for="name">Nome:</label>
+                    <input type="text" class="form-control" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Mensagem:</label>
+                    <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+            <div id="confirmationMessage" class="alert alert-success mt-3 hidden" role="alert">
+                Sua mensagem foi enviada com sucesso!
+            </div>
+        </section>
+    </main>
+    <footer class="text-white text-center py-2">
+        <p>Contatos: <a href="#" class="text-white">Facebook</a> | <a href="#" class="text-white">Twitter</a> | <a href="#" class="text-white">Instagram</a></p>
+        <p>© 2024 Music+. Todos os direitos reservados.</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        function handleSubmit() {
+            document.getElementById('contactForm').reset();
+            document.getElementById('confirmationMessage').classList.remove('hidden');
+            return false; // Prevents form from actually submitting
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #4b2e83;
+}
+
+header {
+    background-color: #4b2e83;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+.logo-img {
+    max-height: 100px;
+    width: auto;
+}
+
+.banner-img {
+    max-height: 200px;
+    width: 100%;
+    object-fit: cover;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+.jumbotron {
+    background-color: #e0dde4;
+    color: #4b2e83;
+    padding: 20px;
+    text-align: center;
+}
+
+.jumbotron h2 {
+    margin: 0;
+}
+
+.blog, .news, .artists, .music-list, .about {
+    background-color: #fff;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+footer {
+    background-color: #4b2e83;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+a {
+    color: #4b2e83;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.card-img-top {
+    object-fit: cover;
+    width: 100%;
+    height: 300px;
+}
+.mc-biel-img {
+    max-width: 100%;
+    height: auto;
+    max-height: 400px; /* Ajuste a altura máxima conforme necessário */
+    object-fit: cover;
+}
+.banner-img {
+    max-height: 300px; /* Ajuste a altura máxima conforme necessário */
+    width: 100%;
+    object-fit: cover;
+}
